@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Mahima Pal | AI/ML Engineer & Systems Developer</title>
+  <meta name="description" content="Portfolio of Mahima Pal, an AI/ML Engineer specializing in document intelligence, agentic systems, and backend REST APIs. VIT Bhopal Computer Science graduate (2027).">
+  <meta name="keywords" content="Mahima Pal, AI, ML, Portfolio, Resume, VIT Bhopal, LangGraph, LangChain, Document Intelligence, Software Engineer">
+  <meta name="author" content="Mahima Pal">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mahima Pal | AI/ML Engineer & Systems Developer">
+  <meta property="og:description" content="Building design-led agentic systems and data pipelines, one at a time.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION (Brutalist Mini)
+       ========================================== -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#home" class="logo">M.<span>Pal</span></a>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">~/home</a></li>
+          <li><a href="#about" class="nav-link">~/about</a></li>
+          <li><a href="#projects" class="nav-link">~/projects</a></li>
+          <li><a href="#experience" class="nav-link">~/experience</a></li>
+          <li><a href="#contact" class="nav-link">~/contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-controls" style="display: flex; gap: 1.5rem; align-items: center;">
+        <!-- Simple Custom Back-to-Top or Actions -->
+        <a href="Resume.pdf" class="nav-link active" style="font-size: 0.75rem;" target="_blank" download>resume.pdf ↓</a>
+        
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION (Cozy Late-Night Workspace with Sticky Scroll Zoom)
+       ========================================== -->
+  <div class="hero-sticky-outer" id="home">
+    <div class="hero-sticky-container">
+      <section class="hero-section">
+        <!-- Starry Background elements -->
+        <div class="starry-bg" id="starry-bg">
+          <div class="star" style="top: 15%; left: 10%; width: 2px; height: 2px; animation-delay: 0.2s;"></div>
+          <div class="star" style="top: 25%; left: 35%; width: 3px; height: 3px; animation-delay: 1.5s;"></div>
+          <div class="star" style="top: 10%; left: 75%; width: 1.5px; height: 1.5px; animation-delay: 0.8s;"></div>
+          <div class="star" style="top: 40%; left: 85%; width: 2.5px; height: 2.5px; animation-delay: 2.1s;"></div>
+          <div class="star" style="top: 60%; left: 15%; width: 2px; height: 2px; animation-delay: 0.5s;"></div>
+          <div class="star" style="top: 75%; left: 45%; width: 1.5px; height: 1.5px; animation-delay: 1.1s;"></div>
+          <div class="star" style="top: 70%; left: 70%; width: 3px; height: 3px; animation-delay: 1.8s;"></div>
+        </div>
+
+        <div class="hero-layout">
+          <div class="hero-details">
+            <span class="mono hero-path">← ~/mahima/intro</span>
+            <h1 class="hero-title">I design <span>intelligent</span> agentic systems, one at a time.</h1>
+            <p class="hero-desc">
+              Hi, I'm Mahima. I'm a developer who bridges AI frameworks and robust backend architecture to turn complex documents and pipelines into highly responsive software.
+            </p>
+
+            <!-- Audience Tabs -->
+            <div class="audience-tabs-container">
+              <span class="mono audience-tabs-label">Customize view for:</span>
+              <ul class="audience-tabs" role="tablist">
+                <li><button class="tab-btn active" data-audience="recruiters" role="tab" aria-selected="true">Recruiters</button></li>
+                <li><button class="tab-btn" data-audience="founders" role="tab" aria-selected="false">Founders</button></li>
+                <li><button class="tab-btn" data-audience="developers" role="tab" aria-selected="false">Developers</button></li>
+                <li><button class="tab-btn" data-audience="ai-teams" role="tab" aria-selected="false">AI Teams</button></li>
+              </ul>
+              <!-- Sub-headline changed by JS -->
+              <p class="audience-text" id="audience-text">
+                Looking for an engineer who builds production-ready multi-agent flows and sub-200ms latency APIs? Scroll down.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cozy Coder Graphic Container -->
+          <div class="hero-graphic">
+            <div class="hero-svg-card">
+              <!-- Customized SVG illustration of female coder in late-night starry workspace -->
+              <svg viewBox="0 0 400 350" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" id="hero-svg">
+                <defs>
+                  <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#0c0e1b"/>
+                    <stop offset="100%" stop-color="#141829"/>
+                  </linearGradient>
+                  <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#f2a93b" stop-opacity="0.3"/>
+                    <stop offset="100%" stop-color="#f2a93b" stop-opacity="0"/>
+                  </linearGradient>
+                  <filter id="glow">
+                    <feGaussianBlur stdDeviation="6" result="blur" />
+                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                  </filter>
+                </defs>
+
+                <!-- Sky Window Frame -->
+                <rect x="20" y="20" width="360" height="200" rx="10" fill="url(#skyGrad)" stroke="#1e223d" stroke-width="2"/>
+                
+                <!-- Window stars -->
+                <circle cx="50" cy="50" r="1" fill="#fff" opacity="0.8"/>
+                <circle cx="120" cy="80" r="1.5" fill="#fff" opacity="0.6"/>
+                <circle cx="280" cy="60" r="1" fill="#fff" opacity="0.9"/>
+                <circle cx="340" cy="110" r="1.2" fill="#fff" opacity="0.5"/>
+                <path d="M 200 40 L 202 45 L 207 47 L 202 49 L 200 54 L 198 49 L 193 47 L 198 45 Z" fill="#e5b842" opacity="0.8"/>
+
+                <!-- Mountains outside window -->
+                <path d="M 20 220 L 90 150 L 160 220 Z" fill="#090a12" opacity="0.8"/>
+                <path d="M 130 220 L 220 120 L 310 220 Z" fill="#06070b"/>
+                <path d="M 280 220 L 340 160 L 380 220 Z" fill="#090a12"/>
+
+                <!-- Cozy Desk Surface -->
+                <rect x="10" y="280" width="380" height="60" fill="#2d1e18" stroke="#1c1d21" stroke-width="3"/>
+                <line x1="10" x2="390" y1="280" y2="280" stroke="#1c1d21" stroke-width="3"/>
+
+                <!-- Laptop Glow Cone -->
+                <polygon points="170,278 100,180 260,180 300,278" fill="url(#glowGrad)" filter="url(#glow)"/>
+
+                <!-- Laptop Screen and base -->
+                <rect x="180" y="210" width="100" height="60" rx="4" fill="#090a12" stroke="#1c1d21" stroke-width="3"/>
+                <rect x="185" y="215" width="90" height="50" fill="#f8f6f0" id="laptop-screen"/>
+                <!-- glowing laptop lines -->
+                <g id="screen-lines">
+                  <rect x="190" y="223" width="50" height="4" fill="#e5b842" rx="2"/>
+                  <rect x="190" y="231" width="70" height="4" fill="#ef4444" rx="2"/>
+                  <rect x="190" y="239" width="40" height="4" fill="#22c55e" rx="2"/>
+                  <rect x="190" y="247" width="60" height="4" fill="#3b82f6" rx="2"/>
+                </g>
+                <polygon points="170,270 290,270 300,278 160,278" fill="#1c1d21" stroke="#1c1d21" stroke-width="2"/>
+
+                <!-- Coffee Mug -->
+                <rect x="320" y="260" width="18" height="20" rx="3" fill="#e5b842" stroke="#1c1d21" stroke-width="2"/>
+                <path d="M 338 264 C 342 264 342 276 338 276" stroke="#1c1d21" stroke-width="2" fill="none"/>
+                <path d="M 324 254 C 324 250 327 250 327 254" stroke="#e5b842" stroke-width="1.5" fill="none" opacity="0.7"/>
+
+                <!-- Small Plant -->
+                <rect x="70" y="250" width="22" height="30" fill="#a78bfa" stroke="#1c1d21" stroke-width="2"/>
+                <ellipse cx="81" cy="245" rx="8" ry="12" fill="#22c55e" stroke="#1c1d21" stroke-width="2"/>
+                <ellipse cx="73" cy="240" rx="10" ry="7" fill="#15803d" stroke="#1c1d21" stroke-width="2"/>
+                <ellipse cx="89" cy="240" rx="10" ry="7" fill="#15803d" stroke="#1c1d21" stroke-width="2"/>
+
+                <!-- Cozy Developer Silhouette (Ponytail/Hairbun representing female coder) -->
+                <!-- Back of chair -->
+                <path d="M 105 280 C 105 240 120 220 120 220" stroke="#1c1d21" stroke-width="6" fill="none"/>
+                <!-- Body/Shoulders -->
+                <path d="M 125 280 C 120 240 135 220 155 220 C 165 220 170 230 170 245 C 165 260 160 280 160 280 Z" fill="#090a12" stroke="#1c1d21" stroke-width="3"/>
+                <!-- Head / Profile -->
+                <circle cx="150" cy="190" r="16" fill="#090a12" stroke="#1c1d21" stroke-width="3"/>
+                <!-- Hair Bun on top -->
+                <circle cx="146" cy="172" r="9" fill="#090a12" stroke="#1c1d21" stroke-width="2.5"/>
+                <!-- Orange Glow reflection outline on face -->
+                <path d="M 162 182 C 166 188 166 195 162 201" stroke="#e5b842" stroke-width="2.5" fill="none"/>
+                <!-- Hands coding -->
+                <ellipse cx="168" cy="270" rx="6" ry="4" fill="#090a12"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       WORKSPACE SEPARATOR (The Ruler Metaphor)
+       ========================================== -->
+  <div class="workspace-ruler-divider" id="workspace-start">
+    <div class="container">
+      <div class="desk-ruler" aria-hidden="true">
+        <div class="desk-ruler-marks"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       WORKSPACE SCRAPBOOK
+       ========================================== -->
+  <div class="workspace-container">
+    <div class="workspace-grid">
+      
+      <!-- Side Pinned Left Column -->
+      <aside class="workspace-sidebar" id="about">
+        <div class="mono sidebar-path" id="sidebar-path" style="min-height: 24px; color: var(--workspace-text-muted); font-size: 0.8rem; margin-bottom: 0.5rem;"></div>
+        <h2 class="sidebar-title">things i've built.</h2>
+        
+        <div class="sidebar-notes" aria-hidden="true">
+          <!-- Yellow Sticky Note -->
+          <div class="sticky-note">
+            <div class="sticky-note-title">
+              <span>NOTE.txt</span>
+              <span>📌</span>
+            </div>
+            <p style="font-size: 0.85rem; line-height: 1.3; font-weight: 500;">
+              Click on any index card to view detailed multi-agent workflows, API architectures, and Git repositories.
+            </p>
+          </div>
+
+          <!-- Terracotta Sticky Note -->
+          <div class="sticky-note terracotta">
+            <div class="sticky-note-title">
+              <span>STACK_SUMMARY.txt</span>
+              <span>⚡</span>
+            </div>
+            <p class="handwritten" style="font-size: 1.25rem;">
+              FastAPI + React/Vite + Google GenAI + LangGraph
+            </p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Scrollable Projects List Right Column -->
+      <main class="works-list" id="projects">
+        
+        <!-- Project 1 (ClarityDoc AI) -->
+        <div class="work-card-wrapper">
+          <div class="tape-top-left" aria-hidden="true"></div>
+          <div class="tape-top-right" aria-hidden="true"></div>
+          <div class="paperclip" aria-hidden="true"></div>
+
+          <!-- Handwritten Comment Beside Card -->
+          <div class="side-comment right" aria-hidden="true">
+            <p class="handwritten">Classifies doc types with 98%+ accuracy! 🚀</p>
+            <svg class="side-comment-arrow" viewBox="0 0 50 50">
+              <path d="M 5 20 Q 30 10 35 30 M 35 30 L 25 35 M 35 30 L 40 20" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <article class="index-card" data-project="claritydoc">
+            <header class="index-card-header">
+              <div>
+                <span class="mono index-card-path">~/works/claritydoc_ai</span>
+                <h3 class="index-card-title">ClarityDoc AI</h3>
+              </div>
+              <span class="mono" style="color: var(--workspace-gold); font-weight: bold;">01/03</span>
+            </header>
+
+            <div class="index-card-details">
+              <p class="index-card-desc">
+                A multi-agent document intelligence platform that automates file parsing, classifies contents into specific domains, extracts key schemas, and exposes intent execution flows via a real-time logger.
+              </p>
+              <div class="index-card-meta">
+                <div>
+                  <span class="meta-group-title">TIMELINE</span>
+                  <p class="mono" style="font-size: 0.8rem; font-weight: bold;">Apr – Jul 2026</p>
+                </div>
+                <div>
+                  <span class="meta-group-title">TECH STACK</span>
+                  <ul class="meta-tech-list">
+                    <li class="meta-tech-tag">LangGraph</li>
+                    <li class="meta-tech-tag">Gemini-2.5</li>
+                    <li class="meta-tech-tag">FastAPI</li>
+                    <li class="meta-tech-tag">React</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 2 (Daily Brief AI) -->
+        <div class="work-card-wrapper">
+          <div class="tape-top-left" aria-hidden="true"></div>
+          <div class="tape-top-right" aria-hidden="true"></div>
+
+          <!-- Handwritten Comment Left -->
+          <div class="side-comment left" aria-hidden="true">
+            <p class="handwritten">Server-Sent Events streaming feeds! 🌪️</p>
+            <svg class="side-comment-arrow" viewBox="0 0 50 50" style="transform: scaleX(-1);">
+              <path d="M 5 20 Q 30 10 35 30 M 35 30 L 25 35 M 35 30 L 40 20" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <article class="index-card" data-project="dailybrief">
+            <header class="index-card-header">
+              <div>
+                <span class="mono index-card-path">~/works/daily_brief_ai</span>
+                <h3 class="index-card-title">Daily Brief AI</h3>
+              </div>
+              <span class="mono" style="color: var(--workspace-gold); font-weight: bold;">02/03</span>
+            </header>
+
+            <div class="index-card-details">
+              <p class="index-card-desc">
+                A real-time agentic news and weather personal assistant. Utilizes Google OAuth 2.0 to access Gmail feeds, aggregates weather data, and streams execution logs using chunked SSE backend responses.
+              </p>
+              <div class="index-card-meta">
+                <div>
+                  <span class="meta-group-title">TIMELINE</span>
+                  <p class="mono" style="font-size: 0.8rem; font-weight: bold;">Dec '25 – Jul '26</p>
+                </div>
+                <div>
+                  <span class="meta-group-title">TECH STACK</span>
+                  <ul class="meta-tech-list">
+                    <li class="meta-tech-tag">Llama-3.1</li>
+                    <li class="meta-tech-tag">FastAPI</li>
+                    <li class="meta-tech-tag">SSE</li>
+                    <li class="meta-tech-tag">APScheduler</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 3 (Flight Data ETL) -->
+        <div class="work-card-wrapper">
+          <div class="tape-top-left" aria-hidden="true"></div>
+          <div class="tape-top-right" aria-hidden="true"></div>
+          <div class="paperclip" aria-hidden="true" style="right: auto; left: 60px;"></div>
+
+          <article class="index-card" data-project="flightdata">
+            <header class="index-card-header">
+              <div>
+                <span class="mono index-card-path">~/works/flight_etl_pipeline</span>
+                <h3 class="index-card-title">Flight Data ETL</h3>
+              </div>
+              <span class="mono" style="color: var(--workspace-gold); font-weight: bold;">03/03</span>
+            </header>
+
+            <div class="index-card-details">
+              <p class="index-card-desc">
+                An end-to-end aviation data processing pipeline cleaning raw datasets with Pandas, loading them into SQLite, and exposing them via an AWS Lambda + API Gateway REST API.
+              </p>
+              <div class="index-card-meta">
+                <div>
+                  <span class="meta-group-title">TIMELINE</span>
+                  <p class="mono" style="font-size: 0.8rem; font-weight: bold;">Jan 2026</p>
+                </div>
+                <div>
+                  <span class="meta-group-title">TECH STACK</span>
+                  <ul class="meta-tech-list">
+                    <li class="meta-tech-tag">Python</li>
+                    <li class="meta-tech-tag">Pandas</li>
+                    <li class="meta-tech-tag">Node.js</li>
+                    <li class="meta-tech-tag">AWS Lambda</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </main>
+    </div>
+
+    <!-- ==========================================
+         SKILLS SECTION (Desk Folder Page)
+         ========================================== -->
+    <section class="skills-section" id="skills">
+      <div class="desk-folder">
+        <div class="desk-folder-tab" aria-hidden="true">skills_matrix.txt</div>
+        
+        <div class="skills-notebook-grid">
+          <!-- Notebook Page Left -->
+          <div class="notebook-page">
+            <h3 class="notebook-page-title">AI/ML & Concepts</h3>
+            <ul class="skills-pills">
+              <li class="skill-pill">LangGraph</li>
+              <li class="skill-pill">LangChain</li>
+              <li class="skill-pill">TensorFlow</li>
+              <li class="skill-pill">Keras</li>
+              <li class="skill-pill">Scikit-learn</li>
+              <li class="skill-pill">NumPy</li>
+              <li class="skill-pill">Pandas</li>
+              <li class="skill-pill">RAG Pipelines</li>
+              <li class="skill-pill">Multi-Agent Loops</li>
+              <li class="skill-pill">Prompt Engineering</li>
+              <li class="skill-pill">Model Optimization</li>
+              <li class="skill-pill">Agentic AI</li>
+            </ul>
+          </div>
+
+          <!-- Notebook Page Right -->
+          <div class="notebook-page">
+            <h3 class="notebook-page-title">Languages & Infra</h3>
+            <ul class="skills-pills">
+              <li class="skill-pill">Python</li>
+              <li class="skill-pill">SQL</li>
+              <li class="skill-pill">FastAPI</li>
+              <li class="skill-pill">REST APIs</li>
+              <li class="skill-pill">Server-Sent Events (SSE)</li>
+              <li class="skill-pill">Git</li>
+              <li class="skill-pill">Node.js</li>
+              <li class="skill-pill">AWS Lambda</li>
+              <li class="skill-pill">API Gateway</li>
+              <li class="skill-pill">Render / Cloud Deploy</li>
+              <li class="skill-pill">SQLite / PostgreSQL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EXPERIENCE TIMELINE (Internship Log Folder)
+         ========================================== -->
+    <section class="experience-section" id="experience">
+      <div class="desk-folder">
+        <div class="desk-folder-tab" aria-hidden="true">internship_report.log</div>
+
+        <div class="experience-log">
+          <!-- Larsen & Toubro -->
+          <article class="log-entry">
+            <header class="log-header">
+              <div>
+                <h3 class="log-role">Data Analysis & Management Intern</h3>
+                <div class="log-company">Larsen & Toubro (L&T)</div>
+                <p class="italic text-lead" style="margin-top: 0.5rem; font-size: 0.95rem; color: var(--workspace-text-muted);">Guwahati, Assam, India</p>
+              </div>
+              <span class="log-date">May 2025 – June 2025</span>
+            </header>
+
+            <ul class="log-bullets">
+              <li>Streamlined internal data collection, validation, and reporting processes to support faster, data-driven operational decision making.</li>
+              <li>Analyzed operational and project records to identify critical workflow inconsistencies and improve dataset integrity.</li>
+              <li>Collaborated with cross-functional project teams to collect and validate requirements for data management tools.</li>
+              <li>Assisted in implementing standardized data protocols, promoting consistency and quality of information across departments.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ACADEMIA & CERTIFICATIONS (Polaroid & Cards)
+         ========================================== -->
+    <section class="academia-certs-section">
+      <div class="grid-2">
+        
+        <!-- Polaroid Academic Frame Left -->
+        <div class="reveal">
+          <div class="academic-polaroid">
+            <div class="polaroid-img-frame">
+              <!-- Custom Elegant Academic Cap Line Sketch -->
+              <svg viewBox="0 0 100 100" width="60%" height="60%">
+                <path d="M 50 15 L 85 30 L 50 45 L 15 30 Z" fill="none" stroke="var(--workspace-border)" stroke-width="2.5"/>
+                <path d="M 30 37 L 30 70 C 30 75 70 75 70 70 L 70 37" fill="none" stroke="var(--workspace-border)" stroke-width="2.5"/>
+                <path d="M 85 30 L 85 60 C 85 60 82 65 80 60" fill="none" stroke="var(--workspace-border)" stroke-width="2.5"/>
+                <circle cx="50" cy="30" r="2.5" fill="var(--workspace-border)"/>
+              </svg>
+            </div>
+            <p class="polaroid-caption">VIT Bhopal 🎓<br><span style="font-family: var(--font-sans); font-size: 0.9rem; color: var(--workspace-text-muted); font-weight: normal;">B.Tech CSE (2023 - 2027)<br>CGPA: 8.34/10</span></p>
+          </div>
+        </div>
+
+        <!-- Index Card Certifications Right -->
+        <div class="reveal" style="display: flex; flex-direction: column; gap: 2rem;">
+          
+          <!-- Smart India Hackathon -->
+          <div class="work-card-wrapper" style="padding: 0;">
+            <div class="tape-top-left" style="left: 20px; top: -10px; width: 60px;" aria-hidden="true"></div>
+            <div class="index-card" style="padding: 2rem;">
+              <span class="mono index-card-path">~/credentials/hackathons</span>
+              <h3 style="font-size: 1.5rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">Smart India Hackathon 2023</h3>
+              <p style="color: var(--workspace-text-muted); font-size: 0.95rem;">Placed in the <strong>Top 5 Finalists</strong> nationwide, competing against 225+ teams.</p>
+            </div>
+          </div>
+
+          <!-- Course Certifications list -->
+          <div class="index-card" style="padding: 2rem;">
+            <span class="mono index-card-path">~/credentials/certifications</span>
+            <h3 style="font-size: 1.5rem; margin-top: 0.5rem; margin-bottom: 1.5rem;">Professional Badges</h3>
+            <ul class="log-bullets" style="padding-left: 1.2rem; font-size: 0.95rem;">
+              <li><strong>Generative AI</strong> — Oracle</li>
+              <li><strong>Foundations of Machine Learning</strong> — NPTEL (SWAYAM)</li>
+              <li><strong>Bits & Bytes in Computer Networking</strong> — Google</li>
+              <li><strong>Marketing Analytics</strong> — NPTEL (SWAYAM)</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION (Lined Legal Paper Pad)
+         ========================================== -->
+    <section class="contact-section" id="contact">
+      <div class="legal-pad-container">
+        <!-- Binder Holes Header -->
+        <div class="legal-pad-header" aria-hidden="true">
+          <div class="legal-pad-binder-holes">
+            <div class="binder-hole"></div>
+            <div class="binder-hole"></div>
+            <div class="binder-hole"></div>
+            <div class="binder-hole"></div>
+            <div class="binder-hole"></div>
+          </div>
+        </div>
+
+        <!-- Sidebar (Pink legal line offset area) -->
+        <div class="legal-pad-sidebar">
+          <h2 style="font-size: 2.5rem; margin-bottom: 2rem; line-height: 1.1; font-weight: normal; color: var(--workspace-text);">drop a line.</h2>
+          <ul class="contact-card-list">
+            <li>
+              <span class="mono" style="color: var(--workspace-text-muted); display: block; font-size: 0.75rem;">EMAIL</span>
+              <a href="mailto:er.mahimapal@gmail.com" style="font-size: 1.05rem; font-weight: 600; text-decoration: underline;">er.mahimapal@gmail.com</a>
+            </li>
+            <li>
+              <span class="mono" style="color: var(--workspace-text-muted); display: block; font-size: 0.75rem;">TEL</span>
+              <a href="tel:+919999724912" style="font-size: 1.05rem; font-weight: 600; text-decoration: underline;">(+91) 9999724912</a>
+            </li>
+            <li>
+              <span class="mono" style="color: var(--workspace-text-muted); display: block; font-size: 0.75rem;">SOCIALS</span>
+              <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+                <a href="https://linkedin.com/in/mahima-pal-39360627a" target="_blank" style="font-size: 0.9rem; font-weight: bold; text-decoration: underline;">LinkedIn</a>
+                <a href="https://github.com/mahimapal-05" target="_blank" style="font-size: 0.9rem; font-weight: bold; text-decoration: underline;">GitHub</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Legal Pad Lined Area Form -->
+        <div class="legal-pad-form-area">
+          <form id="contact-form" style="display: flex; flex-direction: column;">
+            <div class="legal-pad-input-group">
+              <input type="text" id="name" class="legal-pad-input" placeholder=" " required autocomplete="name">
+              <label for="name" class="legal-pad-label">YOUR NAME</label>
+            </div>
+
+            <div class="legal-pad-input-group">
+              <input type="email" id="email" class="legal-pad-input" placeholder=" " required autocomplete="email">
+              <label for="email" class="legal-pad-label">YOUR EMAIL</label>
+            </div>
+
+            <div class="legal-pad-input-group">
+              <textarea id="message" class="legal-pad-input legal-pad-textarea" placeholder=" " required></textarea>
+              <label for="message" class="legal-pad-label">MESSAGE</label>
+            </div>
+
+            <button type="submit" class="btn-brutal" style="align-self: flex-start; margin-top: 1rem;">
+              SEND MESSAGE 
+              <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="logo" style="font-size: 1.15rem;">M.<span>Pal</span></div>
+      <p class="mono" style="color: var(--workspace-text-muted); font-size: 0.75rem;">&copy; 2026 Mahima Pal. Handcrafted Portfolio.</p>
+      <button class="btn-top-brutal" id="btn-back-to-top" aria-label="Back to top">
+        <svg style="width: 18px; height: 18px; fill: currentColor;" viewBox="0 0 24 24">
+          <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       PORTFOLIO CASE STUDY OVERLAY MODALS
+       ========================================== -->
+  
+  <!-- ClarityDoc Modal -->
+  <div class="brutal-modal-overlay" id="modal-claritydoc" role="dialog" aria-modal="true" aria-labelledby="modal-claritydoc-title">
+    <div class="brutal-modal">
+      <div class="brutal-modal-header">
+        <div>
+          <span class="mono" style="color: var(--workspace-text-muted);">~/works/claritydoc_ai</span>
+          <h2 id="modal-claritydoc-title" style="font-size: 2.2rem; font-weight: 500;">ClarityDoc AI Details</h2>
+        </div>
+        <button class="modal-close-btn" aria-label="Close modal">X</button>
+      </div>
+      <div class="brutal-modal-content">
+        <h3 class="modal-section-title">ENGINEERING SPECS & MILESTONES</h3>
+        <ul class="modal-bullet-list">
+          <li><strong>Unified Render Deployment</strong> — Deployed a FastAPI + React/Vite unified application on Render, optimizing performance to achieve consistent sub-200ms API endpoints response latencies.</li>
+          <li><strong>Multi-Agent Routing Engine</strong> — Built an intelligent classification router with Pydantic and Gemini-2.5-Flash, achieving a 98%+ document domain classification rate.</li>
+          <li><strong>LLM Token Optimization</strong> — Engineered document parser pipelines utilizing a 12,000-char window sampler, reducing LLM token consumption by 65%.</li>
+          <li><strong>Interactive Schema-Driven UI</strong> — Designed a schema extraction UI displaying document risk highlights, key flash-cards, and quizzes that sped up user analysis by 80%.</li>
+          <li><strong>Thought Execution Logger</strong> — Programmed a real-time agent execution stream tracking LLM calls, intent, and routing decisions, greatly increasing debugging clarity.</li>
+        </ul>
+        <a href="https://github.com/mahimapal-05" target="_blank" class="btn-brutal">
+          VIEW ON GITHUB ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Daily Brief Modal -->
+  <div class="brutal-modal-overlay" id="modal-dailybrief" role="dialog" aria-modal="true" aria-labelledby="modal-dailybrief-title">
+    <div class="brutal-modal">
+      <div class="brutal-modal-header">
+        <div>
+          <span class="mono" style="color: var(--workspace-text-muted);">~/works/daily_brief_ai</span>
+          <h2 id="modal-dailybrief-title" style="font-size: 2.2rem; font-weight: 500;">Daily Brief AI Details</h2>
+        </div>
+        <button class="modal-close-btn" aria-label="Close modal">X</button>
+      </div>
+      <div class="brutal-modal-content">
+        <h3 class="modal-section-title">ENGINEERING SPECS & MILESTONES</h3>
+        <ul class="modal-bullet-list">
+          <li><strong>SSE Log Streaming</strong> — Deployed a FastAPI + SSE backend streaming raw agent loops, tool calls, and output briefs to the client under 250ms latency.</li>
+          <li><strong>Llama-3.1 Integration</strong> — Configured Groq SDK to dynamically rewrite weather and RSS streams based on personal preferences, improving load speed by 45%.</li>
+          <li><strong>High-Speed Ingestion</strong> — Programmed an ingestion scanner traversing Google News and meteorological APIs, cleaning and ranking 50+ articles in less than 1.5 seconds.</li>
+          <li><strong>Gmail Automation</strong> — Integrated OAuth 2.0 and programmed APScheduler jobs to build and deliver summaries directly to user email accounts.</li>
+          <li><strong>React + Vite SPA</strong> — Programmed a lightweight interface displaying real-time agent thoughts and trace segments, improving load times by 30%.</li>
+        </ul>
+        <a href="https://github.com/mahimapal-05" target="_blank" class="btn-brutal">
+          VIEW ON GITHUB ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flight Data Modal -->
+  <div class="brutal-modal-overlay" id="modal-flightdata" role="dialog" aria-modal="true" aria-labelledby="modal-flightdata-title">
+    <div class="brutal-modal">
+      <div class="brutal-modal-header">
+        <div>
+          <span class="mono" style="color: var(--workspace-text-muted);">~/works/flight_etl_pipeline</span>
+          <h2 id="modal-flightdata-title" style="font-size: 2.2rem; font-weight: 500;">Flight Data ETL Details</h2>
+        </div>
+        <button class="modal-close-btn" aria-label="Close modal">X</button>
+      </div>
+      <div class="brutal-modal-content">
+        <h3 class="modal-section-title">ENGINEERING SPECS & MILESTONES</h3>
+        <ul class="modal-bullet-list">
+          <li><strong>Pandas ETL Ingestion</strong> — Programmed an automated scheduler loading raw CSV and JSON datasets, cleaning anomalies, and normalizing aviation metrics into Postgres/SQLite.</li>
+          <li><strong>Serverless API Delivery</strong> — Built a Node.js/Express API exposed via AWS Lambda + API Gateway, serving flight stats query endpoints under 200ms latency.</li>
+          <li><strong>SQL Query Optimization</strong> — Wrote complex SQL queries evaluating flight delay ratios and carrier metrics.</li>
+          <li><strong>Version Control Flow</strong> — Adopted branched pull-request code workflows with GitHub validation triggers to keep the main branch stable.</li>
+        </ul>
+        <a href="https://github.com/mahimapal-05" target="_blank" class="btn-brutal">
+          VIEW ON GITHUB ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Brutal toast notification (Sticky note style) -->
+  <div class="brutal-toast" id="toast" role="alert" aria-live="polite">
+    <svg style="width: 18px; height: 18px; fill: currentColor;" viewBox="0 0 24 24">
+      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+    </svg>
+    <span>Message sent! 📌</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="scrapbook.js"></script>
+</body>
+</html>
