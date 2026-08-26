@@ -1118,6 +1118,10 @@ body.in-workspace .nav-link.active {
   transform: translateY(0) rotate(2deg);
 }
 
+.brutal-toast.error {
+  background-color: #fca5a5; /* Light Red/Coral for errors */
+}
+
 /* ==========================================
    FOOTER (Neo-brutalist simple)
    ========================================== */

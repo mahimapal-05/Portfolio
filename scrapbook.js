@@ -163,26 +163,64 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
   const contactForm = document.getElementById('contact-form');
   const toast = document.getElementById('toast');
+  const toastText = toast.querySelector('span');
+  const toastSvgPath = toast.querySelector('svg path');
+  const submitBtn = contactForm.querySelector('button[type="submit"]');
+  const originalSubmitHtml = submitBtn.innerHTML;
 
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+    // Disable button and show loading state
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'SENDING...';
 
-    console.log('Form submission received:', { name, email, message });
+    const formData = new FormData(contactForm);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
 
-    // Show custom green sticky note toast
-    toast.classList.add('show');
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: json
+    })
+    .then(async (response) => {
+      const data = await response.json();
+      if (response.status === 200 && data.success) {
+        // Success: checkmark icon, green toast
+        toast.classList.remove('error');
+        toastSvgPath.setAttribute('d', 'M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z');
+        toastText.textContent = 'Message sent! 📌';
+        contactForm.reset();
+      } else {
+        // API level error: cross icon, red toast
+        toast.classList.add('error');
+        toastSvgPath.setAttribute('d', 'M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z');
+        toastText.textContent = data.message || 'Something went wrong. ❌';
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+      toast.classList.add('error');
+      toastSvgPath.setAttribute('d', 'M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z');
+      toastText.textContent = 'Network error. Please try again. ❌';
+    })
+    .finally(() => {
+      // Re-enable button and restore original state
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalSubmitHtml;
 
-    // Reset Form fields
-    contactForm.reset();
+      // Show the toast
+      toast.classList.add('show');
 
-    // Hide Toast after 3.5 seconds
-    setTimeout(() => {
-      toast.classList.remove('show');
-    }, 3500);
+      // Hide toast after 4 seconds
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 4000);
+    });
   });
 
 

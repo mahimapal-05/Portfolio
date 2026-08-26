@@ -530,18 +530,21 @@
         <!-- Legal Pad Lined Area Form -->
         <div class="legal-pad-form-area">
           <form id="contact-form" style="display: flex; flex-direction: column;">
+            <!-- Web3Forms Access Key - Get a free key from https://web3forms.com -->
+            <input type="hidden" name="access_key" value="579524a2-f357-4c17-ae52-cb8e25161512">
+
             <div class="legal-pad-input-group">
-              <input type="text" id="name" class="legal-pad-input" placeholder=" " required autocomplete="name">
+              <input type="text" id="name" name="name" class="legal-pad-input" placeholder=" " required autocomplete="name">
               <label for="name" class="legal-pad-label">YOUR NAME</label>
             </div>
 
             <div class="legal-pad-input-group">
-              <input type="email" id="email" class="legal-pad-input" placeholder=" " required autocomplete="email">
+              <input type="email" id="email" name="email" class="legal-pad-input" placeholder=" " required autocomplete="email">
               <label for="email" class="legal-pad-label">YOUR EMAIL</label>
             </div>
 
             <div class="legal-pad-input-group">
-              <textarea id="message" class="legal-pad-input legal-pad-textarea" placeholder=" " required></textarea>
+              <textarea id="message" name="message" class="legal-pad-input legal-pad-textarea" placeholder=" " required></textarea>
               <label for="message" class="legal-pad-label">MESSAGE</label>
             </div>
 
