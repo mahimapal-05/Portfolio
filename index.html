@@ -291,10 +291,57 @@
           </article>
         </div>
 
-        <!-- Project 2 (Daily Brief AI) -->
+        <!-- Project 2 (CitySurvi) -->
         <div class="work-card-wrapper">
           <div class="tape-top-left" aria-hidden="true"></div>
           <div class="tape-top-right" aria-hidden="true"></div>
+
+          <!-- Handwritten Comment Beside Card -->
+          <div class="side-comment right" aria-hidden="true">
+            <p class="handwritten">0% hallucination XAI engine! 🏙️</p>
+            <svg class="side-comment-arrow" viewBox="0 0 50 50">
+              <path class="draw-arrow" d="M 5 20 Q 30 10 35 30 M 35 30 L 25 35 M 35 30 L 40 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <article class="index-card" data-project="citysurvi">
+            <header class="index-card-header">
+              <div>
+                <span class="mono index-card-path">~/works/citysurvi</span>
+                <h3 class="index-card-title">CitySurvi</h3>
+              </div>
+              <span class="mono" style="color: var(--workspace-gold); font-weight: bold;">02/03</span>
+            </header>
+
+            <div class="index-card-details">
+              <p class="index-card-desc">
+                A city affordability planner and Explainable AI (XAI) relocation decision engine evaluating financial profiles across 10 tier-1 Indian tech hubs with 0% hallucination risk, a 5-factor stress scoring algorithm, and real-time scenario simulations.
+              </p>
+              <div class="index-card-meta">
+                <div>
+                  <span class="meta-group-title">TIMELINE</span>
+                  <p class="mono" style="font-size: 0.8rem; font-weight: bold;">2026</p>
+                </div>
+                <div>
+                  <span class="meta-group-title">TECH STACK</span>
+                  <ul class="meta-tech-list">
+                    <li class="meta-tech-tag">Python</li>
+                    <li class="meta-tech-tag">FastAPI</li>
+                    <li class="meta-tech-tag">Docker</li>
+                    <li class="meta-tech-tag">Pydantic</li>
+                    <li class="meta-tech-tag">Pytest</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 3 (Daily Brief AI) -->
+        <div class="work-card-wrapper">
+          <div class="tape-top-left" aria-hidden="true"></div>
+          <div class="tape-top-right" aria-hidden="true"></div>
+          <div class="paperclip" aria-hidden="true" style="right: auto; left: 60px;"></div>
 
           <!-- Handwritten Comment Beside Card -->
           <div class="side-comment right" aria-hidden="true">
@@ -310,7 +357,7 @@
                 <span class="mono index-card-path">~/works/daily_brief_ai</span>
                 <h3 class="index-card-title">Daily Brief AI</h3>
               </div>
-              <span class="mono" style="color: var(--workspace-gold); font-weight: bold;">02/03</span>
+              <span class="mono" style="color: var(--workspace-gold); font-weight: bold;">03/03</span>
             </header>
 
             <div class="index-card-details">
@@ -325,48 +372,10 @@
                 <div>
                   <span class="meta-group-title">TECH STACK</span>
                   <ul class="meta-tech-list">
-                    <li class="meta-tech-tag">Llama-3.1</li>
                     <li class="meta-tech-tag">FastAPI</li>
+                    <li class="meta-tech-tag">Llama-3.1</li>
                     <li class="meta-tech-tag">SSE</li>
                     <li class="meta-tech-tag">APScheduler</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <!-- Project 3 (Flight Data ETL) -->
-        <div class="work-card-wrapper">
-          <div class="tape-top-left" aria-hidden="true"></div>
-          <div class="tape-top-right" aria-hidden="true"></div>
-          <div class="paperclip" aria-hidden="true" style="right: auto; left: 60px;"></div>
-
-          <article class="index-card" data-project="flightdata">
-            <header class="index-card-header">
-              <div>
-                <span class="mono index-card-path">~/works/flight_etl_pipeline</span>
-                <h3 class="index-card-title">Flight Data ETL</h3>
-              </div>
-              <span class="mono" style="color: var(--workspace-gold); font-weight: bold;">03/03</span>
-            </header>
-
-            <div class="index-card-details">
-              <p class="index-card-desc">
-                An end-to-end aviation data processing pipeline cleaning raw datasets with Pandas, loading them into SQLite, and exposing them via an AWS Lambda + API Gateway REST API.
-              </p>
-              <div class="index-card-meta">
-                <div>
-                  <span class="meta-group-title">TIMELINE</span>
-                  <p class="mono" style="font-size: 0.8rem; font-weight: bold;">Jan 2026</p>
-                </div>
-                <div>
-                  <span class="meta-group-title">TECH STACK</span>
-                  <ul class="meta-tech-list">
-                    <li class="meta-tech-tag">Python</li>
-                    <li class="meta-tech-tag">Pandas</li>
-                    <li class="meta-tech-tag">Node.js</li>
-                    <li class="meta-tech-tag">AWS Lambda</li>
                   </ul>
                 </div>
               </div>
@@ -397,9 +406,11 @@
               <li class="skill-pill">NumPy</li>
               <li class="skill-pill">Pandas</li>
               <li class="skill-pill">RAG Pipelines</li>
-              <li class="skill-pill">Multi-Agent Loops</li>
+              <li class="skill-pill">Multi-Agent Systems</li>
+              <li class="skill-pill">Explainable AI (XAI)</li>
               <li class="skill-pill">Prompt Engineering</li>
               <li class="skill-pill">Model Optimization</li>
+              <li class="skill-pill">Data Visualization</li>
               <li class="skill-pill">Agentic AI</li>
             </ul>
           </div>
@@ -413,12 +424,13 @@
               <li class="skill-pill">FastAPI</li>
               <li class="skill-pill">REST APIs</li>
               <li class="skill-pill">Server-Sent Events (SSE)</li>
+              <li class="skill-pill">Docker</li>
+              <li class="skill-pill">Pytest</li>
+              <li class="skill-pill">Pydantic</li>
               <li class="skill-pill">Git</li>
-              <li class="skill-pill">Node.js</li>
-              <li class="skill-pill">AWS Lambda</li>
-              <li class="skill-pill">API Gateway</li>
+              <li class="skill-pill">React / Vite</li>
+              <li class="skill-pill">Vanilla JS (ES6+)</li>
               <li class="skill-pill">Render / Cloud Deploy</li>
-              <li class="skill-pill">SQLite / PostgreSQL</li>
             </ul>
           </div>
         </div>
@@ -493,7 +505,7 @@
                 </div>
 
                 <div style="margin-bottom: 1.25rem;">
-                  <span class="meta-tech-tag" style="background-color: #fef08a; font-weight: bold;">CGPA: 8.34 / 10.0</span>
+                  <span class="meta-tech-tag" style="background-color: #fef08a; font-weight: bold;">CGPA: 8.3 / 10.0</span>
                   <span class="meta-tech-tag" style="margin-left: 0.4rem;">Specialization in AI & ML</span>
                 </div>
 
@@ -654,6 +666,32 @@
     </div>
   </div>
 
+  <!-- CitySurvi Modal -->
+  <div class="brutal-modal-overlay" id="modal-citysurvi" role="dialog" aria-modal="true" aria-labelledby="modal-citysurvi-title">
+    <div class="brutal-modal">
+      <div class="brutal-modal-header">
+        <div>
+          <span class="mono" style="color: var(--workspace-text-muted);">~/works/citysurvi</span>
+          <h2 id="modal-citysurvi-title" style="font-size: 2.2rem; font-weight: 500;">CitySurvi Details</h2>
+        </div>
+        <button class="modal-close-btn" aria-label="Close modal">X</button>
+      </div>
+      <div class="brutal-modal-content">
+        <h3 class="modal-section-title">ENGINEERING SPECS & MILESTONES</h3>
+        <ul class="modal-bullet-list">
+          <li><strong>Deterministic Explainable AI (XAI) Engine</strong> — Engineered an Explainable AI decision engine analyzing multi-dimensional financial profiles across 10 tier-1 Indian tech cities, generating relocation verdicts with 0% hallucination risk by grounding logic on deterministic mathematical baselines.</li>
+          <li><strong>5-Factor Weighted Financial Stress Scoring</strong> — Designed a 5-factor weighted financial stress scoring algorithm (0–100 index) evaluating rent burden, savings deficit, essential/discretionary spend, and cashflow buffer, classifying users into 5 risk bands.</li>
+          <li><strong>Real-Time "What-If" Sensitivity Simulation</strong> — Built an asynchronous "What-If" scenario simulation engine running real-time multi-variable sensitivity analysis with sub-50ms latency, projecting 1–3 year cumulative wealth multipliers and break-even CTC adjustments across major Indian IT corridors.</li>
+          <li><strong>Dockerized REST API Architecture</strong> — Built a Dockerized REST API with strict Pydantic data contracts and automated unit/regression test suites using Pytest, achieving &lt;100ms response times across all endpoints.</li>
+          <li><strong>Interactive Client Interface</strong> — Crafted a responsive Vanilla JS (ES6+) and modern HTML5/CSS3 frontend delivering dynamic calculations, risk indicator gauges, and scenario comparisons.</li>
+        </ul>
+        <a href="https://github.com/mahimapal-05" target="_blank" class="btn-brutal">
+          VIEW ON GITHUB ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- Daily Brief Modal -->
   <div class="brutal-modal-overlay" id="modal-dailybrief" role="dialog" aria-modal="true" aria-labelledby="modal-dailybrief-title">
     <div class="brutal-modal">
@@ -667,36 +705,11 @@
       <div class="brutal-modal-content">
         <h3 class="modal-section-title">ENGINEERING SPECS & MILESTONES</h3>
         <ul class="modal-bullet-list">
-          <li><strong>SSE Log Streaming</strong> — Deployed a FastAPI + SSE backend streaming raw agent loops, tool calls, and output briefs to the client under 250ms latency.</li>
+          <li><strong>SSE Log Streaming</strong> — Deployed a FastAPI + SSE backend streaming raw agent loops, tool traces, and briefs to the client under 250ms latency.</li>
           <li><strong>Llama-3.1 Integration</strong> — Configured Groq SDK to dynamically rewrite weather and RSS streams based on personal preferences, improving load speed by 45%.</li>
           <li><strong>High-Speed Ingestion</strong> — Programmed an ingestion scanner traversing Google News and meteorological APIs, cleaning and ranking 50+ articles in less than 1.5 seconds.</li>
           <li><strong>Gmail Automation</strong> — Integrated OAuth 2.0 and programmed APScheduler jobs to build and deliver summaries directly to user email accounts.</li>
           <li><strong>React + Vite SPA</strong> — Programmed a lightweight interface displaying real-time agent thoughts and trace segments, improving load times by 30%.</li>
-        </ul>
-        <a href="https://github.com/mahimapal-05" target="_blank" class="btn-brutal">
-          VIEW ON GITHUB ↗
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Flight Data Modal -->
-  <div class="brutal-modal-overlay" id="modal-flightdata" role="dialog" aria-modal="true" aria-labelledby="modal-flightdata-title">
-    <div class="brutal-modal">
-      <div class="brutal-modal-header">
-        <div>
-          <span class="mono" style="color: var(--workspace-text-muted);">~/works/flight_etl_pipeline</span>
-          <h2 id="modal-flightdata-title" style="font-size: 2.2rem; font-weight: 500;">Flight Data ETL Details</h2>
-        </div>
-        <button class="modal-close-btn" aria-label="Close modal">X</button>
-      </div>
-      <div class="brutal-modal-content">
-        <h3 class="modal-section-title">ENGINEERING SPECS & MILESTONES</h3>
-        <ul class="modal-bullet-list">
-          <li><strong>Pandas ETL Ingestion</strong> — Programmed an automated scheduler loading raw CSV and JSON datasets, cleaning anomalies, and normalizing aviation metrics into Postgres/SQLite.</li>
-          <li><strong>Serverless API Delivery</strong> — Built a Node.js/Express API exposed via AWS Lambda + API Gateway, serving flight stats query endpoints under 200ms latency.</li>
-          <li><strong>SQL Query Optimization</strong> — Wrote complex SQL queries evaluating flight delay ratios and carrier metrics.</li>
-          <li><strong>Version Control Flow</strong> — Adopted branched pull-request code workflows with GitHub validation triggers to keep the main branch stable.</li>
         </ul>
         <a href="https://github.com/mahimapal-05" target="_blank" class="btn-brutal">
           VIEW ON GITHUB ↗
